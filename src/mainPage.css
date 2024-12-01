@@ -1,0 +1,56 @@
+/* Reset all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  /* Top Navigation Bar */
+  .topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: orange;
+    display: flex; 
+    align-items: center;
+    padding: 0 20px; 
+  }
+  
+  /* Logo Section */
+  .topNav h3 {
+    flex: 1; 
+    text-align: left;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+
+  .topNav .links {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+  }
+  
+  .topNav a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 50px;
+  }
+  
+  .topNav a:hover {
+    text-decoration-line: underline;
+    color: white;
+    outline-width: 10px;
+  }
+  
