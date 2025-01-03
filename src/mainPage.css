@@ -1,105 +1,226 @@
-/* Reset all elements */
+/* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: white;
-  }
-  
-  /* Top Navigation Bar */
-  .topNav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 15vh;
-    background-color: orange;
-    display: flex; 
-    align-items: center;
-    padding: 0 20px; 
-  }
-  
-  /* Logo Section */
-  .topNav h2 {
-    flex: 1; 
-    text-align: left;
-    color: white;
-    margin: 0;
-    margin-left: 15vh;
-    font-weight: bold;
-    font-size: 45px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  .topNav .links {
-    display: flex;
-    justify-content: flex-end; 
-    position: relative;
-    align-items: center; 
-  }
-  
-  .topNav a {
-    margin-left: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 50px;
-  }
-  
-  .topNav a:hover {
-    text-decoration-line: underline;
-    color: white;
-    outline-width: 10px;
-  }
-  .imageCard{
-    width: 50vh;
-    height: auto;
-  margin-left: 30px;
+body {
+  margin: 0;
+ padding:0%;
+  background-color: white;
+  height: 200vh;
+}
+
+main {
+  margin-top: 0; 
+  margin-top: calc(15vh+20px);
+}
+
+/* Top Navigation Bar */
+.topNav {
+  position: fixed;
   top: 0;
-  box-shadow: 2px 4px 6px 2px rgba(37, 38, 37, 0.497);
-    padding: 20px;
-  }
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
 
- h3{
-  color: orange;
-  text-align: center;
+.topNav h2 {
+  flex: 1;
+  color: white;
+  margin-left: 15vh;
+  font-weight: bold;
+  font-size: 45px;
+}
 
-}  
+.topNav .links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-.tajMahalCard{
+.topNav a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.topNav a:hover {
+  text-decoration: underline;
+}
+
+/* Taj Mahal Section */
+.tajMahalCard {
   display: flex;
   flex-direction: row;
+  /* To accommodate the fixed navbar */
+  margin-top: 0;
+
 }
 
-h1{
-  color: black;
+.imageCard {
+  width: 50vh;
+  height: auto;
+  margin-right: 30px;
+  box-shadow: 2px 4px 6px rgba(37, 38, 37, 0.5);
+  padding: 20px;
 }
-p{
-  color:black;
+
+.imageCard img {
+  width: 100%;
+  height: auto;
 }
-.tajMahalCard .tajInfo{
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  padding: 30px;
-}
-.tajInfo p{
-  color: grey;
+
+.imageCard h3 {
+  color: orange;
+  text-align: center;
   margin-top: 10px;
 }
 
-.charImage{
+.tajInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tajInfo h1 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.tajInfo p {
+  color: grey;
+  line-height: 1.6;
+}
+
+/* Charminar Section */
+.charminarCard {
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+}
+
+.charImage {
+  width: 50vh;
+  position: absolute; 
+  right: 20px;
+  box-shadow: 2px 4px 6px rgba(37, 38, 37, 0.5);
+  padding: 20px;
+  
+}
+
+
+.charImage img {
+  width: 100%;
+  height: 50vh;
+  padding-right: 20px;
+}
+
+.charImage h3 {
+  color: orange;
+  text-align: center;
+  margin-top: 10px;
+}
+.charinfo h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.charinfo p {
+  color: grey;
+  line-height: 1.6;
+  padding: 10px;
+}
+.charinfo{
+  padding-right: 50vh;
+}
+
+.WarangalFortCard{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25vh;
+}
+
+.FortimageCard {
   width: 50vh;
   height: auto;
-margin-left: 30px;
-margin-top: 10px;
-top: 10px;
-box-shadow: 2px 4px 6px 2px rgba(37, 38, 37, 0.497);
+  margin-right: 30px;
+  box-shadow: 2px 4px 6px rgba(37, 38, 37, 0.5);
   padding: 20px;
-  align-self: right;
+}
+
+.FortimageCard img {
+  width: 100%;
+  height: auto;
+}
+
+.FortimageCard h3 {
+  color: orange;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.warangalfortInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.warangalfortInfo h1 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.warangalfortInfo p {
+  color: grey;
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width:480px){
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+ padding:0%;
+  background-color: white;
+  height: 370vh;
+}
+
+.tajMahalCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+
+}
+.imageCard h3 {
+  color: orange;
+  text-align: center;
+  margin-top: 10px;
+}
+.tajInfo h1 {
+  color: black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.tajInfo p {
+  color: grey;
+  line-height: 1.6;
+}
 }
